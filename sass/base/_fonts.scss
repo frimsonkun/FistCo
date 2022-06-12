@@ -1,0 +1,22 @@
+// Roboto
+@import url('../../fonts/Roboto/*.ttf');
+//Artegra
+
+/* Regular */
+
+@font-face {
+    font-family: 'ArtegraSans';
+    src: local('ArtegraSans'), url('../../fonts/Artegra/ArtegraSans-Regular.ttf') format('truetype'), url('../../fonts/Artegra/ArtegraSans-Regular.eot?#iefix') format('embedded-opentype'), url('../../fonts/Artegra/ArtegraSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Bold */
+
+@font-face {
+    font-family: 'ArtegraSans';
+    src: local('ArtegraSans'), url('../../fonts/Artegra/ArtegraSans-Bold.ttf') format('truetype'), url('../../fonts/Artegra/ArtegraSans-Bold.eot?#iefix') format('embedded-opentype'), url('../../fonts/Artegra/ArtegraSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}

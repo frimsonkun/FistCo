@@ -1,0 +1,83 @@
+.prices {
+    padding: 100px 0;
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        & .works_title {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &_card {
+        margin-top: 50px;
+        width: 33%;
+        min-height: 670px;
+        background: #F3F3F3;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 25px;
+        &:nth-child(2) {
+            background-color: $mainColor;
+            color: white;
+            transform: scale(1.1);
+            & .price-big,
+            & .card-list li {
+                color: white;
+            }
+        }
+        &_recomedacion {
+            background-color: #E2E2E2;
+            width: 100%;
+            text-align: center;
+            border-radius: 30px;
+            padding: 7px;
+            margin-top: -20px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: $text-16;
+            line-height: 19px;
+            color: $mainColor;
+        }
+        & .order-btn {
+            background-color: #fff;
+            padding: 15px 60px;
+            &:hover {
+                background-color: $mainColor;
+                color: white;
+            }
+        }
+    }
+}
+
+.price {
+    font-size: 26px;
+    &_small-text {
+        font-size: $text-20;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+.price-big {
+    font-family: 'Artegra Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    color: $mainColor;
+}
+
+.card-list li {
+    font-family: 'Artegra Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: $text-16;
+    line-height: 36px;
+    text-align: center;
+}

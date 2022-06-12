@@ -1,0 +1,17 @@
+<svg width="101" height="101" viewBox="0 0 101 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="50.5" cy="50.5" r="50.5" fill="url(#paint0_linear_37_70)"/>
+<mask id="mask0_37_70" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="23" y="23" width="56" height="56">
+<path d="M47.25 37.25L34.75 46V76" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M47.25 26L59.75 34.75V51L68.5 57.25V76H47.25V26Z" fill="white" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M26 76H76" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</mask>
+<g mask="url(#mask0_37_70)">
+</g>
+<path d="M65 75V39C65 37.8 64.2 37 63 37H57V25L41 29.4V75H29V77H73V75H65ZM49 75V33H53V75H49Z" fill="#1E1E1E"/>
+<defs>
+<linearGradient id="paint0_linear_37_70" x1="50.5" y1="0" x2="50.5" y2="101" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E2E2E2"/>
+<stop offset="1" stop-color="#D5D5D5"/>
+</linearGradient>
+</defs>
+</svg>
