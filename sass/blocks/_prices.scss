@@ -24,8 +24,8 @@
             background-color: $mainColor;
             color: white;
             transform: scale(1.1);
-            & .price-big,
-            & .card-list li {
+            border: 1px solid $lightGrayColor;
+            & .price-big {
                 color: white;
             }
         }

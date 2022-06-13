@@ -8,7 +8,10 @@
 }
 
 body {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -24,6 +27,12 @@ body {
   font-size: 64px;
   line-height: 70px;
   color: #1E1E1E;
+}
+
+@media screen and (max-width: 1200px) {
+  .article-text {
+    font-size: 20px;
+  }
 }
 
 .order-btn {
@@ -58,8 +67,28 @@ body {
   transition: opacity 1s cubic-bezier(0, 0, 0, 1.17);
 }
 
+.dark-theme-text {
+  color: white !important;
+}
+
 .dark {
-  background-color: #1E1E1E;
+  background-color: #1E1E1E !important;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+.dark-theme_btn {
+  background-color: #FFF;
+  color: #1E1E1E;
+}
+
+.dark-theme_about {
+  background: radial-gradient(circle at 30px 20px, #3b3b3b 0%, rgba(30, 30, 30, 0.1) 100%) !important;
+}
+
+.dark-theme_about span,
+.dark-theme_about p {
+  color: #9F9F9F;
 }
 
 /* Regular */
@@ -97,6 +126,13 @@ button {
 input:focus,
 button:focus {
   outline: none;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 999999;
 }
 
 .header-content_full-width {
@@ -161,17 +197,6 @@ button:focus {
 
 .toggle label::before {
   position: absolute;
-  width: 15000px;
-  height: 15000px;
-  background: #1E1E1E;
-  z-index: 10;
-  top: 0;
-  left: 500px;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  border-radius: 100%;
-  opacity: 1;
   -webkit-transform: translate3d(-47%, 0, 0) scale(0.1);
           transform: translate3d(-47%, 0, 0) scale(0.1);
   -webkit-transition: background 300ms ease-in-out 200ms, opacity 350ms ease-in-out 200ms;
@@ -191,7 +216,7 @@ button:focus {
   width: 20px;
   height: 20px;
   background: #fff;
-  border: 1px solid black;
+  border: 1px solid #626262;
   content: "";
   border-radius: 100px;
   -webkit-transition: background 200ms linear, -webkit-transform 200ms ease-in-out 100ms;
@@ -294,6 +319,7 @@ button:focus {
 }
 
 .header-nav {
+  background-color: #fff;
   width: 100%;
 }
 
@@ -332,6 +358,8 @@ button:focus {
 }
 
 .main_article {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   background: #E6E6E6 url("../../img/header/curve-lines.svg") 0 50% no-repeat;
   min-height: 720px;
   position: relative;
@@ -421,7 +449,7 @@ button:focus {
 .services {
   position: relative;
   padding: 200px 0;
-  background: url("../../img/services/services-bg.svg") 0 40% repeat-x;
+  background: url("../../img/services/services-bg.svg") 20% 50% repeat-x;
 }
 
 .services_description-block {
@@ -589,6 +617,7 @@ button:focus {
 }
 
 .gallery_item {
+  overflow: hidden;
   position: relative;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
@@ -743,7 +772,7 @@ button:focus {
           flex: 1 1 280px;
   height: 280px;
   border-radius: 18px;
-  background: radial-gradient(circle at 30px 20px, white 0%, rgba(30, 30, 30, 0.1) 100%);
+  background: radial-gradient(circle at 0px 0px, white 0%, rgba(30, 30, 30, 0.1) 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -840,10 +869,10 @@ button:focus {
   color: white;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  border: 1px solid #9F9F9F;
 }
 
-.prices_card:nth-child(2) .price-big,
-.prices_card:nth-child(2) .card-list li {
+.prices_card:nth-child(2) .price-big {
   color: white;
 }
 
@@ -965,7 +994,9 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 65px;
+  gap: 45px;
+  background: url("../../img/comments/comments-bg.svg") center no-repeat;
+  background-size: cover;
 }
 
 .btn-socials {
@@ -1015,6 +1046,7 @@ button:focus {
 }
 
 .footer {
+  max-width: 100vw;
   border-top: 1px solid #9F9F9F;
   background-color: #1E1E1E;
 }

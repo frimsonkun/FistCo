@@ -1,80 +1,81 @@
-.main {
-    &_article {
-        background: #E6E6E6 url('../../img/header/curve-lines.svg') 0 50% no-repeat;
-        min-height: 720px;
-        position: relative;
-        z-index: 9;
-        &::after {
-            content: "";
-            width: 35%;
-            height: 100%;
-            background-color: $mainColor;
-            position: absolute;
-            right: 0;
-            top: 0;
-            z-index: 0;
-            background: $mainColor url('../../img/header/curve-lines.svg') 10% 100% no-repeat;
+    .main {
+        &_article {
+            transition: all .5s ease;
+            background: #E6E6E6 url('../../img/header/curve-lines.svg') 0 50% no-repeat;
+            min-height: 720px;
+            position: relative;
+            z-index: 9;
+            &::after {
+                content: "";
+                width: 35%;
+                height: 100%;
+                background-color: $mainColor;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 0;
+                background: $mainColor url('../../img/header/curve-lines.svg') 10% 100% no-repeat;
+            }
+            &_picture img {
+                position: absolute;
+                right: 40px;
+                top: 80px;
+                border-radius: 18px;
+                z-index: 8;
+            }
         }
-        &_picture img {
-            position: absolute;
-            right: 40px;
-            top: 80px;
+    }
+    
+    .hero-text {
+        max-width: 65%;
+        padding-top: 100px;
+    }
+    
+    .article {
+        // &_title {}
+        &_text {
+            font-family: 'Artegra Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 64px;
+            line-height: 70px;
+            color: $mainColor;
+        }
+        &_description {
+            font-family: 'Artegra Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: $text-20;
+            line-height: 30px;
+            margin: 50px 0;
+            position: relative;
+            z-index: 9;
+            width: 75%;
+        }
+        &_tags {
+            background-color: #fff;
             border-radius: 18px;
-            z-index: 8;
+            position: relative;
+            z-index: 9;
         }
     }
-}
-
-.hero-text {
-    max-width: 65%;
-    padding-top: 100px;
-}
-
-.article {
-    // &_title {}
-    &_text {
-        font-family: 'Artegra Sans', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 64px;
-        line-height: 70px;
-        color: $mainColor;
+    
+    .tags {
+        display: flex;
+        gap: 45px;
+        justify-content: space-evenly;
+        padding: 25px 30px;
+        & li:not(first-child):hover {
+            opacity: .8;
+        }
+        & li a {
+            font-family: 'Artegra Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        & li:first-child a {
+            font-size: $text-20;
+        }
     }
-    &_description {
-        font-family: 'Artegra Sans', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: $text-20;
-        line-height: 30px;
-        margin: 50px 0;
-        position: relative;
-        z-index: 9;
-        width: 75%;
-    }
-    &_tags {
-        background-color: #fff;
-        border-radius: 18px;
-        position: relative;
-        z-index: 9;
-    }
-}
-
-.tags {
-    display: flex;
-    gap: 45px;
-    justify-content: space-evenly;
-    padding: 25px 30px;
-    & li:not(first-child):hover {
-        opacity: .8;
-    }
-    & li a {
-        font-family: 'Artegra Sans', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 22px;
-    }
-    & li:first-child a {
-        font-size: $text-20;
-    }
-}
