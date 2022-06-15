@@ -4,6 +4,10 @@ header {
     z-index: 999999;
 }
 
+.header .container {
+    padding: 0;
+}
+
 .header-content_full-width {
     width: 100%;
     background-color: #fff;
@@ -16,7 +20,7 @@ header {
     justify-content: space-between;
     height: 90px;
     align-items: center;
-    padding: 30px;
+    padding: 10px 30px;
 }
 
 .header-switchers {
@@ -171,4 +175,8 @@ header {
             color: $grayColor;
         }
     }
+}
+
+#burger-container {
+    display: none;
 }

@@ -1,6 +1,6 @@
 const toggle = document.querySelector('.toggle');
 let body = document.querySelector('body');
-let mainArticle = document.querySelector('.main_article')
+let mainArticle = document.querySelector('.main_article');
 let buttons = document.querySelectorAll('.order-btn');
 let articles = document.querySelectorAll('.article_text');
 let aboutBlocks = document.querySelectorAll('.about_block');
@@ -26,3 +26,5 @@ function toggleTheme() {
     })
 
 }
+
+//sad

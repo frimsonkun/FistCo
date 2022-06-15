@@ -1,0 +1,77 @@
+.contacts {
+    & .container {
+        & .contacts_contacts {
+            .contacts-text {
+                & .footer {
+                    &_contact-row {
+                        padding: 0 0 50px;
+                        border: none;
+                        display: flex;
+                        flex-direction: column;
+                        & h3 {
+                            font-family: 'Artegra Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 64px;
+                            line-height: 70px;
+                            /* or 109% */
+                            color: #1E1E1E;
+                            margin: 0;
+                        }
+                        & p,
+                        & a {
+                            font-family: 'Artegra Sans', sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 32px;
+                            color: #626262;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_contacts {
+        display: flex;
+    }
+}
+
+.article {
+    &_text {
+        margin: 50px 0;
+        display: inline-block;
+    }
+}
+
+.contacts-text {
+    width: 40%;
+}
+
+.full-width {
+    background: #E2E2E2;
+    & .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 70px 0;
+        & .order-btn {
+            padding: 20px 35px;
+            background-color: $mainColor;
+            & .btn-text a {
+                color: #E2E2E2;
+            }
+        }
+    }
+}
+
+.full-width-text {
+    font-family: 'Artegra Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    /* or 125% */
+    color: #1E1E1E;
+}

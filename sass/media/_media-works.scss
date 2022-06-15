@@ -1,0 +1,41 @@
+@media (max-width: $breakpoint-576) {
+    .works-gallery {
+        padding: 20px 0;
+    }
+    .works-gallery-container {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .works-gallery-item {
+        &:nth-child(odd) {
+            width: 90%;
+            height: 420px;
+        }
+        &:nth-child(even) {
+            width: 90%;
+            height: 420px;
+            position: relative;
+            top: 0;
+        }
+        &-text {
+            flex-direction: column;
+            text-align: center;
+        }
+        &_title {
+            font-family: 'Artegra Sans', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: $text-24;
+            line-height: 40px;
+            color: #FFFFFF;
+            display: inline-block;
+        }
+        & .works_see-all {
+            font-size: $text-18;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+    }
+}

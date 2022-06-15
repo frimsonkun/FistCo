@@ -1,0 +1,98 @@
+.works-gallery {
+    padding: 70px 0;
+}
+
+.works-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.works-gallery-item {
+    cursor: pointer;
+    border-radius: 18px;
+    position: relative;
+    &-text {
+        gap: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(4px);
+        border-radius: 0px 0px 18px 18px;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &:hover &-text {
+        height: 150px;
+    }
+    &:nth-child(1) {
+        background-image: url(../../img/works/works-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    &:nth-child(2) {
+        background-image: url(../../img/works/works-2.jpg);
+    }
+    &:nth-child(3) {
+        background-image: url(../../img/works/works-3.jpg);
+    }
+    &:nth-child(4) {
+        background-image: url(../../img/works/works-4.jpg);
+    }
+    &:nth-child(5) {
+        background-image: url(../../img/works/works-5.jpg);
+    }
+    &:nth-child(6) {
+        background-image: url(../../img/works/works-6.jpg);
+    }
+    &:nth-child(odd) {
+        width: 60%;
+        height: 420px;
+    }
+    &:nth-child(even) {
+        width: 35%;
+        height: 460px;
+        position: relative;
+        top: -70px;
+    }
+    &_title {
+        font-family: 'Artegra Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $text-32;
+        line-height: 40px;
+        color: #FFFFFF;
+        display: inline-block;
+    }
+    & .works_see-all {
+        display: inline-block;
+        font-family: 'Artegra Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $text-24;
+        line-height: 30px;
+        color: #FFFFFF;
+        &:hover {
+            opacity: .8;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: $mainColor;
+            top: -10px;
+            left: -15px;
+            z-index: -1;
+            border-radius: 50%;
+        }
+    }
+}
